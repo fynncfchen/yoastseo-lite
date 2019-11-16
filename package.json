@@ -16,6 +16,9 @@
     "url": "https://github.com/fynncfchen/yoastseo-lite.git"
   },
   "license": "GPL-3.0",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -25,7 +28,7 @@
     "build-grunt": "grunt publish",
     "install-ci": "grunt get-premium-configuration",
     "lint": "grunt check",
-    "prepublishOnly": "grunt publish",
+    "prepublishOnly": "npm build",
     "start": "npm start --prefix examples/webpack",
     "pretest": "yarn install-ci",
     "test": "jest --runInBand"
